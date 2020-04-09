@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyRent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<header class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="main-navbar">
+        <a class="navbar-brand" id="brand" href="#">Easy Rent</a>
+
+        <button class="navbar-toggler d-md-none" id="toggle-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navbar-ul">
+                <li class="nav-item active" id="log_in_button">
+                    <a class="nav-link" href="#"><p class="nav_text">Log In</p></a>
+                </li>
+                <li class="nav-item active" id="sign_up_button" >
+                    <a class="nav-link" href="sign_up.html"><p class="nav_text">Sign Up</p></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+
+<div class="container main_content" id="auth_main_content">
+    <h2 id="main_content_h2">Log In</h2>
+    <div class="row" id="main_content_row">
+        <div class="col-sm-12 main_content_item">
+            <form id="auth_form" action="index.html">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check" style="width:60%; margin-left: auto; margin-right: auto; margin-bottom: 10px;
+                    text-align: center;">
+                    <input type="checkbox" class="form-check-input" id="check_me_checkbox">
+                    <label class="form-check-label" for="check_me_checkbox">Check me out</label>
+                </div>
+                <div style="width:35%; margin-left: auto; margin-right: auto;">
+                    <button style="width:100%;" type="submit" class="btn btn-primary">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+</body>
+</html>
