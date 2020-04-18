@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+$button_color : #81b6ff;
+$item_my_rents_color : lightgrey;
+$navbar_brand_color : white;
+$main_content_color : #c4c4c2;
+
 body {
   background-image: url("src/img/background.png");
 }
@@ -22,7 +27,7 @@ body {
 
 .tpcl_btn {
   padding-top: 0;
-  background-color: #81b6ff;
+  background-color: $button_color;
   font-weight: bold;
 }
 
@@ -36,13 +41,13 @@ body {
 .item_my_rents {
   text-align: center;
   border-radius: 15px;
-  background-color: lightgrey;
+  background-color: $item_my_rents_color;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .navbar-brand, #brand {
-  background-color: white;
+  background-color: $navbar_brand_color;
   color: black;
   width: 130px;
   text-align: center;
@@ -80,7 +85,7 @@ body {
   width: 55%;
   border-radius: 40px;
   margin-top: 120px;
-  background-color: #c4c4c2;
+  background-color: $main_content_color;
   border-radius: 30px;
 }
 
@@ -123,6 +128,7 @@ body {
     width: 75%;
   }
 }
+
 @media (max-width: 767px) {
   .navbar-brand, #brand {
     background-color: transparent;
@@ -160,5 +166,3 @@ body {
     margin-top: 15px;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
