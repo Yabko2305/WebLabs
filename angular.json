@@ -24,9 +24,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/bootstrap.min.css",
+              "src/styles.css",
+              "src/assets/tempusdominus-bootstrap-4.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/jquery.min.js",
+              "src/assets/bootstrap.min.js",
+              "src/assets/moment.min.js",
+              "src/assets/tempusdominus-bootstrap-4.min.js",
+              "src/assets/wtf.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,9 +96,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/bootstrap.min.css",
+              "src/styles.css",
+              "src/assets/tempusdominus-bootstrap-4.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/jquery.min.js",
+              "src/assets/bootstrap.min.js",
+              "src/assets/moment.min.js",
+              "src/assets/tempusdominus-bootstrap-4.min.js",
+              "src/assets/wtf.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +135,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "WebLabsAngular"
+    }
+  },
+  "defaultProject": "WebLabsAngular",
+  "cli": {
+    "analytics": "aa755816-dff9-4d3b-bb08-3ae7c40f4c16"
+  }
 }

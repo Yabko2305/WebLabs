@@ -1,0 +1,33 @@
+<div style="border-radius: 10px">
+  <mat-dialog-content class="background_default" style="border-radius: 10px">
+    <div class="form-group" style="border-radius: 10px">
+      <div class="row" id="main_content_row" style="padding-top: 30px">
+        <div class="col-12 main_content_item">
+          <label for="inputState">Classroom to book</label>
+          <select  [(ngModel)]="reservationFormData.classroom" id="inputState" class="form-control">
+            <option *ngFor="let classroom of classrooms" >{{classroom.classRoomNum}}</option>
+          </select>
+        </div>
+        <div class="col-12  main_content_item">
+          <label for="datetimepicker_begin" class="lables">Reservation date</label>
+          <div class="input-wrapper" id="datetimepicker_begin" data-target-input="nearest">
+            <input class="form-control"  owlinput [(ngModel)]="reservationFormData.startDate"
+                   [owlDateTimeTrigger]="dtPicker1" [owlDateTime]="dtPicker1">
+            <owl-date-time #dtPicker1></owl-date-time>
+          </div>
+        </div>
+        <div class="col-12  main_content_item">
+          <label for="datetimepicker_end" class="lables">End of reservation date</label>
+          <div class="input-wrapper" id="datetimepicker_end" data-target-input="nearest">
+            <input class="form-control" [(ngModel)]="reservationFormData.endDate" owlinput
+                   [owlDateTimeTrigger]="dtPicker2" [owlDateTime]="dtPicker2">
+            <owl-date-time #dtPicker2></owl-date-time>
+          </div>
+        </div>
+        <div class="col-12 " style="width: 100%;">
+          <div id="try"><button (click)='onEdit()' type="submit" id="add_reservation" class="btn btn-primary mb-2">Edit</button></div>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+</div>

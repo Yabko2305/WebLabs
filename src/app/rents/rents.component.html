@@ -1,0 +1,13 @@
+<div class="container" id="my_rents_main_content">
+  <h2 id="main_content_h2">All reservations</h2>
+  <div class="row" id="main_content_row">
+    <div class="col-xl-3 col-lg-4 col-md-6 main_content_item"
+         style="margin-top:20px; padding:0 10px;" *ngFor="let rent of rents">
+      <div class="item_my_rents">
+        <h3>Classroom: {{ rent.classroom_id }}</h3>
+        <div>Starting date: {{ rent.startDate }}</div>
+        <div>Ending date: {{ rent.endDate }}</div>
+      </div>
+    </div>
+  </div>
+</div>

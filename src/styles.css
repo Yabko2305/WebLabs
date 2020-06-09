@@ -1,1 +1,168 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("src/assets/images/background.png");
+}
+
+.background_default{
+  background-image: url("src/assets/images/background.png");
+}
+.navbar-nav {
+  width: 100%;
+}
+
+.navbar_right_button {
+  margin-right: 0;
+  margin-left: auto;
+  float: right;
+}
+
+#my_rents_main_content {
+  max-width: 100%;
+  width: 90%;
+}
+
+.tpcl_btn {
+  padding-top: 0;
+  background-color: #81b6ff;
+  font-weight: bold;
+}
+
+.my_rents_buttons {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.item_my_rents {
+  text-align: center;
+  border-radius: 15px;
+  background-color: lightgrey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-brand, #brand {
+  background-color: white;
+  color: black;
+  width: 130px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: "Courier New", "Times New Roman", "Arial";
+  font-weight: bold;
+}
+
+.nav_text {
+  margin-bottom: 0;
+}
+
+#sign_up_button {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#auth_form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#log_in_button {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#auth_main_content {
+  width: 40%;
+}
+
+.main_content {
+  width: 55%;
+  border-radius: 40px;
+  margin-top: 120px;
+  background-color: #c4c4c2;
+  border-radius: 30px;
+}
+
+#main_content_row {
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  padding-bottom: 20px;
+}
+
+#main_content_h2 {
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+
+#add_reservation {
+  margin-top: 32px;
+  width: 100%;
+}
+
+#try {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .my_rents_buttons {
+    width: 80%;
+  }
+
+  #auth_main_content {
+    width: 60%;
+  }
+
+  .main_content {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand, #brand {
+    background-color: transparent;
+    color: white;
+  }
+
+  #add_reservation {
+    margin-top: 15px;
+  }
+
+  #auth_main_content {
+    width: 75%;
+  }
+
+  .main_content {
+    width: 90%;
+  }
+
+  .nav-item {
+    margin: auto;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav:nth-child(1) {
+    border-top: 1px solid white;
+  }
+
+  #navbar_username_button {
+    display: none;
+  }
+
+  #navbarSupportedContent {
+    margin-top: 15px;
+  }
+}

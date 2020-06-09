@@ -1,0 +1,17 @@
+<div class="container" id="my_rents_main_content">
+  <h2 id="main_content_h2">My reservations</h2>
+  <div class="row" id="main_content_row">
+    <div class="col-xl-3 col-lg-4 col-md-6 main_content_item"
+         style="margin-top:20px; padding:0 10px;" *ngFor="let rent of rents">
+      <div class="item_my_rents">
+        <h3>Classroom: {{ rent.classroom_id }}</h3>
+        <div>Starting date: {{ rent.startDate }}</div>
+        <div>Ending date: {{ rent.endDate }}</div>
+        <div class="my_rents_buttons">
+          <button (click) = onEdit(rent) style="width:37%;" type="submit" class="btn tpcl_btn">Edit</button>
+          <button (click) = onDelete(rent) style="width: 57%; float:right" type="submit" class="btn tpcl_btn">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
